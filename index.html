@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-trans - Начни двигаться по новому</title>
     <link rel="stylesheet" href="style/style.css">
+    <!-- <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript">
+    </script> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+
+    <script defer src="js/index.js"></script>
 </head>
 <body>
     <header class="header">
@@ -49,7 +57,7 @@
 
         <section class="product" id="gyroscooter">
             <div class="container product__container">
-                <img src="image/gyroscooter.png" alt="gyroscooter">
+                <img class="product__photo" src="image/gyroscooter.png" alt="gyroscooter">
 
                 <div class="product__content">
                     <h2 class="product__title">Гироскутер</h2>
@@ -63,7 +71,7 @@
 
         <section class="product" id="monowheels">
             <div class="container product__container">
-                <img src="image/monowheels.png" alt="monowheels">
+                <img class="product__photo" src="image/monowheels.png" alt="monowheels">
 
                 <div class="product__content">
                     <h2 class="product__title">Моноколесо</h2>
@@ -77,7 +85,7 @@
 
         <section class="product" id="electroscooter">
             <div class="container product__container">
-                <img src="image/electroscooter.png" alt="electroscooter">
+                <img class="product__photo" src="image/electroscooter.png" alt="electroscooter">
 
                 <div class="product__content">
                     <h2 class="product__title">Электросамокат</h2>
@@ -178,7 +186,7 @@
             <div class="footer__column contacts">
                 <h3 class="footer__title">Контакты:</h3>
 
-                <div class="contacts__list">
+                <div class="contacts__list contacts__list_footer">
                     <a href="#tel:+73848833812" class="contacts__link">+7(384)883-38-12</a>
 
                     <a href="#mailto:ETrans@gmail.com" class="contacts__link">ETrans@gmail.com</a>
